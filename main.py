@@ -71,7 +71,7 @@ class Person:
         connection.commit()
 
 
-for x in range(15000,26200):
+for x in range(7000):
     third_response = session.get(f"https://lms.pvpittssm.edu.in/user/profile.php?id={x}")
     third_dom_tree = html.fromstring(third_response.text)
     
